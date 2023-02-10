@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+.form-box{
+    color: #fff;
+    margin: 10% 20%;
+}
+
+.form-box input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: #333 1px solid;
+    font-size: 14px;
+    outline: none;
+    color: #000;
+}
+
+
+.background-img {
+    background-image: 
+    url(
+  "../imgs/gradient-bg.jpg");
+    background-size: "cover";
+    width: 90%;
+    height: 100%;
+    border-radius: 40px;
+    background-repeat:no-repeat; 
+
+}
+
+
+
+.container-1{
+    height: 100%;
+    width: 25%;
+    border-radius: 40px;
+    border-right: 1px white solid;
+}
