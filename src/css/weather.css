@@ -2,11 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    font-family:Arial, Helvetica, sans-serif
 }
 
+.main-container{
+    background-color: #000;
+    color: white;
+    width: 90%;
+    height: 100%;
+    border-radius: 40px;
+    border: 1px white solid;
+   
+}
 
-
+/* Search Box*/
 .form-box{
     color: #fff;
     margin: 10% 20%;
@@ -15,30 +24,78 @@
 .form-box input[type="text"] {
     background-color: transparent;
     border: none;
-    border-bottom: #333 1px solid;
+    border-bottom: #fff 1px solid;
     font-size: 14px;
     outline: none;
-    color: #000;
+    color: #fff;
+    width: 100%;
+}
+
+.btn .fa-magnifying-glass{
+    color: #fff;
 }
 
 
-.background-img {
-    background-image: 
-    url(
-  "../imgs/gradient-bg.jpg");
-    background-size: "cover";
-    width: 90%;
-    height: 100%;
-    border-radius: 40px;
-    background-repeat:no-repeat; 
-
-}
-
-
+/* First Container*/
 
 .container-1{
+    background-image: 
+    url(
+  "../imgs/blurry-bg-1.jpg");
+    background-size: "cover";
+    position: relative;
     height: 100%;
     width: 25%;
     border-radius: 40px;
     border-right: 1px white solid;
+    backdrop-filter: blur(9px);
+   
 }
+
+.city-name{
+    font-size: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.city-name{
+    height: 100%;
+}
+
+.city-name p{
+    padding-top: 8px;
+    font-size: 20px;
+}
+
+.temp{
+    font-size: 80px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.weather-emoji{
+    width: 15%;
+    height: 15%;
+}
+
+/* Wind information*/
+.wind-info{
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 80%;
+    border: 1px white solid;
+    border-radius: 20px;
+}
+
+.wind-info h6{
+    padding-right: 3px;
+}
+
+.wind-speed{
+    text-align: center;
+}
+
+
+
+

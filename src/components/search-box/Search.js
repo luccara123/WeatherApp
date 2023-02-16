@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import CityWeather from './CityWeather';
-import './css/utilities.css';
-import './css/weather.css';
+import CityWeather from '../current-weather/CityWeather';
+import '../../css/utilities.css';
+import '../../css/weather.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, regular, brands, icon, light } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+import moment from 'moment'
 
-function WeatherApp(props){
+
+function Search(props){
     const [city, changeCity] = useState("Toronto");
     const [ cityNameWeather, changeCityNameWeather] = useState ("Toronto")
 
@@ -19,20 +21,22 @@ function WeatherApp(props){
 
     return(
     <div className='wrapper flex bg-dark vh-100 p-5'>
-        <div className='background-img'>
-            <div className='container-1 glass-effect p-2'>
-                    <form className='form-box' onSubmit={searchCity}>
-                        <input type="text" value={city} onChange={(e)=>changeCity(e.target.value)} />
+        <div className='main-container'>
+            <div className='container-1 p-2'>
+                <div className='wrapper-2'>
+                <form className='form-box flex' onSubmit={searchCity}>
+                    <input type="text" value={city} onChange={(e)=>changeCity(e.target.value)} />
                         <button type="submit" className='btn'>
                             {searchIcon}
                         </button>
-                    </form>
-
-                    <CityWeather cityName={cityNameWeather} />
+                </form>
+                </div>
+                <div className='weather-cards'>
+                </div>
             </div>
         </div>
     </div>
     )
 }
 
-export default WeatherApp;
+export default Search;
